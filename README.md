@@ -1,4 +1,4 @@
-# Bank Marketing Dataset - Machine Learning Model
+# Bank Marketing Dataset
 
 ### Overview
 
