@@ -51,20 +51,22 @@ The dataset is available in the `Bank Marketing Dataset.zip` file, which include
 - **Logistic Regression**:
   - Handled imbalanced classes using `class_weight='balanced'`.
   - Evaluated performance on a test set using:
-    - **Accuracy**: `84.25%`
+    - **Accuracy**: `88%`
     - **Precision, Recall, F1-score** for both classes.
     - Confusion matrix for detailed error analysis.
 
-## Key Results
+### Results
 
-### Summary Statistics:
-- **Total Records**: `45,211`
-- **Total Revenue from Campaign**: `N/A` (Feature not included in dataset)
-- **Average Campaign Duration**: `258.16 seconds`
-- **Imbalanced Classes**: Positive class `1` (minority).
+The model achieved an accuracy of 88% with the following performance metrics:
 
-### Model Performance:
-- **Accuracy**: `84.25%`
+- Precision (no): 0.93
+- Recall (no): 0.94
+- Precision (yes): 0.50
+- Recall (yes): 0.45
+- F1-Score (yes): 0.48
+- Overall Accuracy: 0.88
+
+Although the accuracy is high, the model is biased towards predicting the 'no' class due to the imbalance in the target variable. Further steps can be taken to address this, such as tuning the model, trying different sampling methods, or using algorithms that handle class imbalance better.
 
 ### Source
 
