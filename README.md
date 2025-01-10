@@ -1,5 +1,3 @@
-# Bank Marketing Dataset
-
 # Bank Marketing Campaign Analysis
 
 ## Project Overview
