@@ -35,19 +35,19 @@ The dataset is available in the `Bank Marketing Dataset.zip` file, which include
 
 ## Key Steps
 
-### 1. Data Cleaning
+#### 1. Data Cleaning
 - Imputed missing values using median for numerical features and mode for categorical features.
 - Removed leading/trailing spaces in column names.
 - Normalized numerical columns using `StandardScaler`.
 - Encoded binary and categorical columns using `LabelEncoder` and one-hot encoding.
 
-### 2. Exploratory Data Analysis (EDA)
+#### 2. Exploratory Data Analysis (EDA)
 - Summary statistics and distributions for numerical and categorical variables.
 - Visualizations:
   - Distribution of campaign durations and balances.
   - Analysis of customer age and campaign success rates.
 
-### 3. Predictive Modeling
+#### 3. Predictive Modeling
 - **Logistic Regression**:
   - Handled imbalanced classes using `class_weight='balanced'`.
   - Evaluated performance on a test set using:
