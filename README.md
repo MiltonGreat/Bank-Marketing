@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-This project focuses on analyzing and modeling data from a bank marketing campaign. The goal is to predict whether a client will subscribe to a term deposit based on demographic, financial, and campaign-related features. The dataset includes over 45,000 records with features such as age, job, education, marital status, and campaign duration.
+This project focuses on analyzing and modeling data from a bank marketing campaign. 
+
+The goal is to predict whether a client will subscribe to a term deposit based on demographic, financial, and campaign-related features. The dataset includes over 45,000 records with features such as age, job, education, marital status, and campaign duration.
 
 ### Key Objectives
 
