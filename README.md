@@ -2,9 +2,7 @@
 
 ## Project Overview
 
-This project focuses on analyzing and modeling data from a bank marketing campaign. 
-
-The goal is to predict whether a client will subscribe to a term deposit based on demographic, financial, and campaign-related features. The dataset includes over 45,000 records with features such as age, job, education, marital status, and campaign duration.
+This project analyzes data from a bank marketing campaign to predict whether a client will subscribe to a term deposit. The dataset includes demographic, financial, and campaign-related features from over 45,000 records.
 
 ### Key Objectives
 
@@ -18,8 +16,9 @@ The goal is to predict whether a client will subscribe to a term deposit based o
    - Identify patterns and anomalies in customer and campaign behavior.
 
 3. **Predictive Modeling**:
-   - Train a Logistic Regression model to classify customer responses.
-   - Evaluate model performance using metrics like accuracy, precision, recall, and F1-score.
+   - Train and evaluate classification models such as Logistic Regression, Random Forest, and XGBoost.
+   - Address class imbalance using SMOTE and hyperparameter tuning.
+   - Assess model performance using precision, recall, F1-score, and ROC-AUC.
 
 ## Dataset
 
@@ -61,15 +60,13 @@ The dataset is available in the `Bank Marketing Dataset.zip` file, which include
 
 The model achieved an accuracy of 88% with the following performance metrics:
 
-- Precision (no): 0.93
-- Recall (no): 0.94
 - Precision (yes): 0.50
 - Recall (yes): 0.45
 - F1-Score (yes): 0.48
 - Overall Accuracy: 0.88
-
-Although the accuracy is high, the model is biased towards predicting the 'no' class due to the imbalance in the target variable. Further steps can be taken to address this, such as tuning the model, trying different sampling methods, or using algorithms that handle class imbalance better.
-
+- Models show high accuracy but struggle with minority class prediction.
+- XGBoost performs slightly better in ROC-AUC score.
+  
 ### Source
 
-https://www.kaggle.com/datasets/hariharanpavan/bank-marketing-dataset-analysis-classification
+Dataset: [Bank Marketing Campaign Analysis Dataset on Kaggle](https://www.kaggle.com/datasets/hariharanpavan/bank-marketing-dataset-analysis-classification)
