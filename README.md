@@ -1,8 +1,8 @@
-# Bank Marketing Campaign Analysis
+# Bank Marketing Campaign - Subscription Prediction
 
 ## Project Overview
 
-This project analyzes data from a bank marketing campaign to predict whether a client will subscribe to a term deposit. The dataset includes demographic, financial, and campaign-related features from over 45,000 records.
+This project analyzes data from a bank marketing campaign to predict whether a client will subscribe to a term deposit. The dataset includes demographic, financial, and campaign-related features from over 45,000 records. The primary objective is to build predictive models that are sensitive to the class imbalance between subscribers and non-subscribers.
 
 ### Key Objectives
 
@@ -58,14 +58,33 @@ The dataset is available in the `Bank Marketing Dataset.zip` file, which include
 
 ### Results
 
-The model achieved an accuracy of 88% with the following performance metrics:
+#### Performance Metrics
 
-- Precision (yes): 0.50
-- Recall (yes): 0.45
-- F1-Score (yes): 0.48
-- Overall Accuracy: 0.88
-- Models show high accuracy but struggle with minority class prediction.
-- XGBoost performs slightly better in ROC-AUC score.
+After applying SMOTE to address class imbalance, the models demonstrated:
+
+Random Forest (with SMOTE):
+- Precision (yes): 0.48
+- Recall (yes): 0.32
+- F1-Score (yes): 0.38
+- ROC-AUC Score: 0.6348
+- Overall Accuracy: 88%
+
+XGBoost (with SMOTE):
+- Precision (yes): 0.47
+- Recall (yes): 0.34
+- F1-Score (yes): 0.40
+- ROC-AUC Score: 0.6455
+- Overall Accuracy: 87%
+
+### Key Findings
+
+- Both models show strong performance for predicting non-subscribers (Class 0), with high precision and recall.
+- Performance for subscribers (Class 1) remains a challenge. While SMOTE improved recall for the minority class, there is still significant room for improvement, as precision and recall remain relatively low for this class.
+- The ROC-AUC scores suggest that while both models perform better than random guessing, their ability to differentiate between the two classes can still be optimized.
+
+### Conclusion
+
+This project has demonstrated the importance of addressing class imbalance when predicting minority classes, such as customer subscriptions to a term deposit. While SMOTE improved the recall for subscribers, further optimization is needed to improve overall model sensitivity for predicting this minority class. Techniques like undersampling, cost-sensitive learning, and hyperparameter tuning should be explored in future iterations to refine the model's ability to accurately predict both classes.
   
 ### Source
 
